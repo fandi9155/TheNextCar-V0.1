@@ -1,0 +1,32 @@
+﻿<Window x:Class="TheNextCar0._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar0._1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="582">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="startButtom" Content="STOPED" HorizontalAlignment="Left" Margin="55,337,0,0" VerticalAlignment="Top" Click="OnStartButtonCliked" Height="41" Width="86" FontSize="14" FontWeight="Bold" Background="Red" Foreground="White"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSED" HorizontalAlignment="Left" Margin="177,347,0,0" VerticalAlignment="Top" Click="OnDoorOpenButtonCliked" Width="72" BorderBrush="White"/>
+        <Button x:Name="LockedDoorButton" Content="LOCKED" HorizontalAlignment="Left" Margin="277,346,0,0" VerticalAlignment="Top" Click="OnLockDoorButtonCliked" Width="72"/>
+        <Button x:Name="AccuButtom" Content="OFF" HorizontalAlignment="Left" Margin="380,346,0,0" VerticalAlignment="Top" Click="OnAccuButtonCliked" Width="72"/>
+        <Label x:Name="Status" Content="Engine Started" HorizontalAlignment="Left" Margin="55,383,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="DoorOpenStaete" Content="door is open" HorizontalAlignment="Left" Margin="172,362,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="LockDoorState" Content="door unclocked" HorizontalAlignment="Left" Margin="267,362,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="AccuState" Content=" no power" HorizontalAlignment="Left" Margin="384,360,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Image x:Name="image" HorizontalAlignment="Center" Height="279" Margin="0,20,0,0" VerticalAlignment="Top" Width="520" Source="/Assets/navigation.jpg"/>
+        <Label x:Name="label" Content="Door" HorizontalAlignment="Left" Margin="192,316,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy" Content="Power" HorizontalAlignment="Left" Margin="397,315,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy1" Content="Security" HorizontalAlignment="Left" Margin="287,315,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy3" Content="Nama   : M. Yusuf Afandi" HorizontalAlignment="Left" Margin="459,321,0,0" VerticalAlignment="Top" Foreground="White" FontSize="10" FontFamily="Adobe Gothic Std B"/>
+        <Label x:Name="label_Copy2" Content="Nim    : 19.11.2803" HorizontalAlignment="Left" Margin="459,336,0,0" VerticalAlignment="Top" Foreground="White" FontSize="10" FontFamily="Adobe Gothic Std B"/>
+
+    </Grid>
+</Window>
